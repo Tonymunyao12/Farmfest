@@ -45,6 +45,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.7.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.7.2'
+    implementation 'com.google.mlkit:object-detection-common:18.0.0'
     debugImplementation 'androidx.fragment:fragment-testing:1.6.1'
     androidTestImplementation 'androidx.navigation:navigation-testing:2.7.2'
     testImplementation 'junit:junit:4.13.2'
@@ -99,4 +100,9 @@ dependencies {
     implementation "androidx.camera:camera-video:${camerax_version}"
     implementation "androidx.camera:camera-view:${camerax_version}"
     implementation "androidx.camera:camera-extensions:${camerax_version}"
+
+    // Object Detection libraries
+    implementation project(':opencv:sdk')
+    implementation 'com.google.mlkit:object-detection-common:18.0.0'
+
 }
